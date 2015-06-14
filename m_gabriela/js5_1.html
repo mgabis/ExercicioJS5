@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+
+            var nome;
+            var valor;
+            var parcela;
+            var valpar;
+
+            var produto;
+            var quantidade;
+            var total;
+            var produto2;
+            var quantidade2;
+            var valor2;
+            var produto3;
+            var quantidade3;
+            var valor3;
+            var total1;
+            var total2;
+            var total3;
+
+            nome = prompt('Nome do cliente: ', '');
+            Produto = prompt('Nome do produto: ', '');
+            valor = parseFloat((prompt('valor unitário: ', '')).replace(',', '.'));
+            quantidade = parseInt((prompt('Quantidade desejada:', '')).replace(',', '.'));
+            Produto2 = prompt('Nome do produto: ', '');
+            valor2 = parseFloat((prompt('valor unitário: ', '')).replace(',', '.'));
+            quantidade2 = parseInt((prompt('Quantidade desejada:', '')).replace(',', '.'));
+            Produto3 = prompt('Nome do produto: ', '');
+            valor3 = parseFloat((prompt('valor unitário: ', '')).replace(',', '.'));
+            quantidade3 = parseInt((prompt('Quantidade desejada:', '')).replace(',', '.'));
+
+            total1 = valor * quantidade;
+            total2 = valor2 * quantidade2;
+            total3 = valor3 * quantidade3;
+            total = total1 + total2 + total3;
+
+            document.write('Nome do cliente: ' + nome + '<br/>');
+            document.write('Produto: ' + produto + '<br/>');
+            document.write('Valor unitário: ' + valor + '<br/>');
+            document.write('Quantidade do produto: ' + quantidade + '<br/>');
+            document.write('valor: ' + total1 + '<br/>');
+            document.write('Produto: ' + produto2 + '<br/>');
+            document.write('Valor unitário: ' + valor2 + '<br/>');
+            document.write('Quantidade do produto: ' + quantidade2 + '<br/>');
+            document.write('valor: ' + total2 + '<br/>');
+            document.write('Produto: ' + produto3 + '<br/>');
+            document.write('Valor unitário: ' + valor3 + '<br/>');
+            document.write('Quantidade do produto: ' + quantidade3 + '<br/>');
+            document.write('valor: ' + total3 + '<br/>');
+            document.write('valor total: ' + total + '<br/>');
+
+            parcela = parseInt((prompt('Quantidade de parcelas desejadas:', '')).replace(',', '.'));
+
+            valpar = total / parcela;
+
+            document.write('Quantidade do parcelas: ' + parcela + '<br/>');
+            document.write('valor da parcela: ' + valpar + '<br/>');
+        </script>
+    </body>
+</html>
